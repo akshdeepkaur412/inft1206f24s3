@@ -1,12 +1,50 @@
+<!--
+
+         Name: Akshdeep Kaur
+
+         File: as3pt2.html
+
+         Date: 18-Oct-2024
+
+         A file to create a biography template.
+
+-->
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
-    <title>Cool box</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div><p>This is a cool box</p></div>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Red Cool Box</title>
+    <style>
+        .cool-box {
+            width: 400px;
+            height: 250px;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 30%, transparent 70%), red;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 250px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            border: 1px solid darkred;
+            box-shadow: 
+                5px 5px 15px rgba(0, 0, 0, 0.3),
+                inset 3px 3px 10px rgba(255, 255, 255, 0.5),
+                inset -3px -3px 10px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 3px black;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cool-box">
+        This is a cool box
+    </div>
+
+</body>
 </html>

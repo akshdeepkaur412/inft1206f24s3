@@ -1,117 +1,122 @@
-<!doctype html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Formatting a biography</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style></style>
+<!--
 
-    <style class="editable">
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+         Name: Akshdeep Kaur
 
-      h1 {
-        color: #375e97;
-        font-size: 2em;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        border-bottom: 1px solid #375e97;
-      }
+         File: as3pt1.html
 
-      h2 {
-        font-size: 1.5em;
-      }
+         Date: 18-Oct-2024
 
-      .job-title {
-        color: #999999;
-        font-weight: bold;
-      }
+         A file to create a biography template.
 
-      a:link,
-      a:visited {
-        color: #fb6542;
-      }
+-->
+<!DOCTYPE html>
+<html lang="en">
 
-      a:hover {
-        text-decoration: none;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .bio-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px; 
+            width: 100%;
+            border: 2px solid black; 
+            text-align: left; 
+        }
+
+        h1 {
+          color: hotpink;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            
+        }
+
+        .decorative-line {
+            border-bottom: 5px dotted #9c27b0; 
+            margin: 10px 0 20px;
+        }
+
+        .job-title {
+            color: #999999;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            border: 2px solid #9c27b0;
+            padding: 15px;
+            background-color: #eeeeee;
+            font-size: 1.1em;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #fb6542;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
-    <section class="preview">
-      <h1>Jane Doe</h1>
-      <div class="job-title">Web Developer</div>
-      <p>
-        Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia, there live the blind texts. Separated they live in
-        Bookmarksgrove right at the coast of the Semantics, a large language
-        ocean.
-      </p>
-
-      <p>
-        A small river named Duden flows by their place and supplies it with the
-        necessary regelialia. It is a paradisematic country, in which roasted
-        parts of sentences fly into your mouth.
-      </p>
-
-      <h2>Contact information</h2>
-      <ul>
-        <li>Email: <a href="mailto:jane@example.com">jane@example.com</a></li>
-        <li>Web: <a href="https://example.com">https://example.com</a></li>
-        <li>Tel: 123 45678</li>
-      </ul>
-    </section>
-
-    <textarea class="playable playable-css" style="height: 500px">
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-  color: #375e97;
-  font-size: 2em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  border-bottom: 1px solid #375e97;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-.job-title {
-  color: #999999;
-  font-weight: bold;
-}
-
-a:link, a:visited {
-  color: #fb6542;
-}
-
-a:hover {
-  text-decoration: none;
-}</textarea
-    >
-
-    <textarea class="playable playable-html" style="height: 300px">
-<h1>Jane Doe</h1>
-<div class="job-title">Web Developer</div>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-
-<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. </p>
-
-<h2>Contact information</h2>
-<ul>
-  <li>Email: <a href="mailto:jane@example.com">jane@example.com</a></li>
-  <li>Web: <a href="http://example.com">http://example.com</a></li>
-  <li>Tel: 123 45678</li>
-</ul></textarea
-    >
-
-    <div class="playable-buttons">
-      <input id="reset" type="button" value="Reset" />
+<body>
+    <div class="bio-container">
+        <h1>Jane Doe</h1>
+        <div class="decorative-line"></div>
+        <div class="job-title">Web Developer</div>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        <h2>Contact information</h2>
+        <div class="contact-info">
+            <ul>
+                <li>Email: <a href="mailto:jane@example.com">jane@example.com</a></li>
+                <li>Web: <a href="https://example.com" target="_blank">https://example.com</a></li>
+                <li>Tel: 123 45678</li>
+            </ul>
+        </div>
     </div>
-  </body>
-  <script src="playable.js"></script>
+</body>
+
 </html>
